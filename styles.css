@@ -164,7 +164,7 @@ body {
  font-weight: 700;
 }
 
-.links {
+.links a{
   padding: 9px;
   border-radius: 4px;
 }
