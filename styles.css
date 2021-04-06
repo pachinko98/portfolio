@@ -151,7 +151,7 @@ body {
 }
 
 .projects li {
- margin: 5em;
+ margin: 1em;
 }
 
 .projects img {
@@ -162,6 +162,11 @@ body {
 .projects figcaption {
  margin: 1em;
  font-weight: 700;
+}
+
+.links {
+  padding: 9px;
+  border-radius: 4px;
 }
 
 .contact {
@@ -214,6 +219,11 @@ p {
   text-decoration: none;
 }
 
+.links a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
 /*******colors*******/
 
 body {
@@ -235,6 +245,14 @@ h2, h3, h4, h5, h6 {
   
 .contact a{
   color: #FF4063;
+}
+
+.links {
+  background-color: #FFF375;
+}
+
+.links a {
+  color: red;
 }
 
 /*******animations/transitions*******/
@@ -415,17 +433,6 @@ h2, h3, h4, h5, h6 {
   .contact a:hover {
     color: #FF6163;
   }
-
-  .projects img:hover {
-    width: 110px;
-    height: 110px;
-  }
-
-  .projects img:active {
-    width: 100px;
-    height: 100px;
-  }
-  
 }
 
 @media (min-width: 1200px) {
