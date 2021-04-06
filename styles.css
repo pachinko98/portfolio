@@ -220,7 +220,6 @@ p {
 }
 
 .links a {
-  font-weight: 700;
   text-decoration: none;
 }
 
@@ -247,15 +246,24 @@ h2, h3, h4, h5, h6 {
   color: #FF4063;
 }
 
-.links {
-  background-color: #FFF39D;
-}
-
 .links a {
-  color: #22224E;
+  color: #FFF375;
 }
 
 /*******animations/transitions*******/
+
+@keyframes glimmer {
+  0%{
+    background-color: #3E3F73;
+  }
+
+  50%{
+    background-color: #5859A3;
+  }
+  100%{
+    background-color: #3E3F73;
+  }
+}
 
 .contact a:focus {
   color: #9E283D;
@@ -264,6 +272,14 @@ h2, h3, h4, h5, h6 {
 .projects img:focus {
   width: 50px;
   height: 50px;
+}
+
+.links a:hover {
+  animation: glimmer 4s infinite;
+}
+
+.links a:focus {
+  animation: glimmer 1s infinite;
 }
 
 /********media queries********/
@@ -424,10 +440,11 @@ h2, h3, h4, h5, h6 {
 
   nav a:hover {
     color: #FFF39D;
+    animation: glimmer 4s infinite;
   }
 
   nav a:focus {
-    background-color: rgba(181, 227, 245, 0.1);
+    animation: glimmer 1s infinite;
   }
   
   .contact a:hover {
